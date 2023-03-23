@@ -1,0 +1,73 @@
+@import url("../css/header.css");
+@import url("../css/layout.css");
+@import url("../css/footer.css");
+
+.content_about {
+   padding-left: calc(50% - 820px / 2);
+   padding-right: calc(50% - 820px / 2);
+   padding-bottom: 254px;
+}
+
+.about_sibtitle {
+    margin-top: 33px;
+    margin-bottom: 25px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+    align-items: center;
+    color: #000000; 
+}
+
+.about_text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 29px;
+    align-items: center;
+    color: #000000;
+}
+
+@media screen and (max-width: 1024px) {
+   /*стили для планшета*/
+
+.content_about {
+    padding-left: 64px;
+    padding-right: 32px;
+   }
+
+.video {
+    max-width: 100%;
+    max-height: 600px;
+    background-color: #000000;
+   }
+
+.video_iframe {
+    max-width: 100%;
+    max-height: 550px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+   }
+}
+
+@media screen and (max-width: 767px) {
+    /*стили для мобилки*/
+
+.content_about {
+    padding-left: 16px;
+    padding-right: 16px;
+    }
+    
+.video {
+    max-width: 100%;
+    max-height: 233px;
+    background-color: #000000;
+    }
+    
+.video_iframe {
+    max-width: 100%;
+    max-height: 193px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    }
+}

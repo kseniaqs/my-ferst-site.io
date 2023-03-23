@@ -1,0 +1,147 @@
+@import url("../css/header.css");
+@import url("../css/layout.css");
+@import url("../css/footer.css");
+
+.main_contacts {
+    padding-left: calc(50% - 1268px / 2);
+    padding-right: calc(50% - 1268px / 2);
+ }
+
+.contacts_content {
+    margin-top: 33px;
+    margin-bottom: 25px;
+    margin-left: 286px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+    align-items: center;
+    color:#000000
+}
+
+.contacts_text {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 29px;
+    align-items: center;
+    color: #000000;
+    margin-left: 288px;
+}
+
+.contacts {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    width: 439px;
+    color: #000000;
+    margin-left: 288px;
+}
+
+.maps_ifreme {
+    width: 100vw;
+    height: 370px;
+}
+
+@media screen and (max-width: 1024px) {
+   /*стили для планшета*/
+
+.contacts {
+   padding-left: 0px;
+   padding-right: 32px;
+   }
+
+.maps {
+    max-height: 600px;
+   }
+
+.maps_iframe {
+    max-width: 100%;
+    max-height: 370px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+   }
+}
+
+@media screen and (max-width: 767px) {
+    /*стили для мобилки*/
+
+   .header {
+      padding-left: 0px;
+      padding-right: 16px;
+   }
+
+   .menu {
+      flex-direction: column;
+      list-style-type: none;
+      margin-left: 54px;
+   }
+
+   .logo {
+      display: none;
+   }
+
+   .contacts {
+      padding-left: 16px;
+      padding-right: 16px;
+   }
+
+   .content__info {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 32px;
+      text-align: center;
+   }
+
+   .content__section {
+      width: 90%;
+   }
+
+    .content-students {
+       padding-left: 16px;
+       padding-right: 16px;
+    }
+
+    .students {
+       justify-content: center;
+    }
+
+   .content {
+      padding-left: 64px;
+      padding-right: 32px;
+    }
+   }
+  
+@media screen and (max-width: 767px) {
+   /*стили для мобилки*/
+
+   .maps {
+      max-width: 100%;
+      background-color: #000000;
+    }
+      
+   .maps_iframe {
+      max-width: 100%;
+      max-height: 193px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+}
+
+@media screen and (min-width: 320px)and (max-width: 425px) {
+   /*стили для мобилки*/
+
+   .contacts_content{
+      margin-left: 0px;
+   }
+
+   .contacts_text {
+      margin-left: 0px;
+   }
+
+   .contacts {
+      margin-left: 0px;
+      width: fit-content;
+   }
+}

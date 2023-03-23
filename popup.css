@@ -1,0 +1,73 @@
+.popup__container {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup__container_opened {
+    display: flex;
+}
+
+.popup {
+    width: 300px;
+    height: 300px;
+    background: #FFFFFF;
+    position: relative;
+}
+
+.popup__close {
+    position: absolute;
+    top: -40px;
+    right: -40px;
+}
+
+
+#login_tab {
+    position: absolute;
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    margin-top: 160px;
+    width: 500px;
+    height: 418px;
+    background: #ffffff;
+    border: 1px solid #213b7e;
+    filter: drop-shadow(5px 5px 4px rgba(0, 0, 0, 0.25));
+    z-index: 1; /* Чтобы был поверх карты */
+}
+
+.login_content {
+    margin-top: 26px;
+}
+
+.login_tatle {
+margin-bottom: 36px;
+margin-left: 171px;
+font-size: 24px;
+line-height: 28px;
+color: #000000;
+}
+
+.login_input {
+    padding: 0 10px;
+    margin-bottom: 56px;
+    margin-left: 28px;
+    width: 444px;
+    height: 55px;
+    font-size: 24px;
+    line-height: 28px;
+    color: #808080;
+}
+
+.heder_button_login {
+    margin-left: 174px;
+    border: 0;
+}

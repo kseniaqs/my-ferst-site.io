@@ -1,0 +1,181 @@
+@import url("../css/header.css");
+@import url("../css/layout.css");
+@import url("../css/footer.css");
+
+.content {
+    padding-left: calc(50% - 911px / 2);
+    padding-right: calc(50% - 911px / 2);
+}
+
+.content__info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content__section {
+    width: 634px;
+}
+
+.heading {
+    position: relative;
+    width: 129px;
+    font-family: 'Lobster', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 45px;
+    color: #646464;
+}
+
+/* Login Start */
+
+#login_tab {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  margin-top: 160px;
+  width: 500px;
+  height: 418px;
+  background: #FFFFFF;
+  border: 1px solid #213B7E;
+  filter: drop-shadow(5px 5px 4px rgba(0, 0, 0, 0.25));
+  z-index: 1;
+}
+
+.login_content {
+  margin-top: 26px;
+}
+
+.login_title {
+  margin-bottom: 36px;
+  margin-left: 171px;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+}
+
+.login_input {
+  margin-bottom: 56px;
+  margin-left: 28px;
+  width: 444px;
+  height: 55px;
+  font-size: 24px;
+  line-height: 28px;
+  color: #808080;
+}
+
+.header_button_login {
+  margin-left: 174px;
+  border: 0;
+}
+
+.popup__container {
+    display: none; /* Скрываем для начала */
+}
+
+.popup__container_opened {
+    display: block;
+}
+
+.popup__close {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 5px;
+    right: 5px;
+    transition: .5s linear;
+}
+
+.popup__close:hover {
+    cursor: pointer;
+    color: #ffffff;
+}
+
+.header_button {
+  font-size: 18px;
+  line-height: 21px;
+  padding: 15px 51px;
+  height: 50px;
+  border: 0;
+  text-decoration: none;
+  background: #EA5D21;
+  color: #FFFFFF;
+  transition: .2s;
+}
+
+.header_button:hover {
+  text-shadow: 1px 1px 2px black;
+  box-shadow: 0px 0px 5px #ffffff;
+}
+
+/* Login Tab End */
+
+.quotation-marks {
+    font-size: 64px;
+}
+
+.quotation-marks_left {
+    position: absolute;
+    left: -33px;
+    top: 7px;
+}
+
+.quotation-marks_right {
+    position: absolute;
+    top: 50px;
+    right: -22px;
+}
+
+.title {
+    margin-top: 33px;
+    margin-bottom: 25px;
+    font-size: 30px;
+    line-height: 35px;
+}
+
+.subtitle {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 29px;
+}
+
+.about__text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+@media screen and (max-width: 1024px) { 
+    /* Cтили для планшета */ 
+    .content { 
+        padding-left: calc(50% - 736px / 2); 
+        padding-right: calc(50% - 736px / 2); 
+    } 
+ 
+    .content_section { 
+        width: 70%; 
+    } 
+ 
+    .content_info { 
+        align-items: center; 
+    } 
+}
+
+@media screen and (max-width: 767px) {
+    /*стили для мобилки*/
+    .content__info {
+       flex-wrap: wrap;
+       justify-content: center;
+       gap: 32px;
+       text-align: center;
+    }
+
+    .content__section {
+       width: 90%;
+    }
+}
